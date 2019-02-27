@@ -16,8 +16,6 @@ def make_mat(height, width):
 
 
 if __name__ == '__main__':
-    args = input().split()
-    height = int(args[0])
-    width = int(args[1])
-    result = make_mat(height, width)
+    height, width = input().split()
+    result = make_mat(int(height), int(width))
     print(result)
