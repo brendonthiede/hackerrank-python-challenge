@@ -1,0 +1,2 @@
+for i in range(1,int(input())): #More than 2 lines will result in 0 score. Do not leave a blank line also
+    print((0, pow(10, 8) * i)[i > 8] +(0, pow(10, 7) * i)[i > 7] +(0, pow(10, 6) * i)[i > 6] +(0, pow(10, 5) * i)[i > 5] +(0, pow(10, 4) * i)[i > 4] +(0, pow(10, 3) * i)[i > 3] +(0, pow(10, 2) * i)[i > 2] +(0, pow(10, 1) * i)[i > 1] + i)
