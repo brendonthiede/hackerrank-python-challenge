@@ -1,4 +1,4 @@
-foreach ($test in (Get-ChildItem -Path "$PSScriptRoot" -Filter "*_test.ps1")) {
+foreach ($test in (Get-ChildItem -Path "$PSScriptRoot" -Filter "*_*.ps1")) {
   Write-Host "Executing $test"
   & "$PSScriptRoot\$test"
 }
