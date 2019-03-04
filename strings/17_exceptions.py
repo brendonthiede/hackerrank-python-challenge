@@ -5,6 +5,6 @@ if __name__ == '__main__':
             numbers = input().split()
             numerator = int(numbers[0])
             denominator = int(numbers[1])
-            print(int(numerator/denominator))
+            print(int(numerator//denominator))
         except Exception as e:
             print("Error Code:", e)
