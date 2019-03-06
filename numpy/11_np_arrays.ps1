@@ -1,10 +1,10 @@
-# CHALLENGE_URL_PLACEHOLDER
+# https://www.hackerrank.com/challenges/np-arrays
 Describe 'Tests' {
   It 'Passes Tests' {
-    $sampleInput = "SAMPLE_INPUT_PLACEHOLDER"
-    $sampleOutputValue = "SAMPLE_OUTPUT_PLACEHOLDER"
+    $sampleInput = "1 2 3 4 -8 -10"
+    $sampleOutputValue = "[-10.  -8.   4.   3.   2.   1.]"
     $sampleOutputValue = $sampleOutputValue.Split("`n")
-    $result = ($sampleInput | python "$PSScriptRoot\SCRIPT_NAME_PLACEHOLDER")
+    $result = ($sampleInput | python "$PSScriptRoot\11_np_arrays.py")
     if ($sampleOutputValue.Length -eq 1) {
       $result | Should -BeExactly $sampleOutputValue[0]
     } else {

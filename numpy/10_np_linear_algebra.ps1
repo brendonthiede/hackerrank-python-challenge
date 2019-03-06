@@ -1,10 +1,10 @@
-# CHALLENGE_URL_PLACEHOLDER
+# https://www.hackerrank.com/challenges/np-linear-algebra
 Describe 'Tests' {
   It 'Passes Tests' {
-    $sampleInput = "SAMPLE_INPUT_PLACEHOLDER"
-    $sampleOutputValue = "SAMPLE_OUTPUT_PLACEHOLDER"
+    $sampleInput = "2`n1.1 1.1`n1.1 1.1"
+    $sampleOutputValue = "0.0"
     $sampleOutputValue = $sampleOutputValue.Split("`n")
-    $result = ($sampleInput | python "$PSScriptRoot\SCRIPT_NAME_PLACEHOLDER")
+    $result = ($sampleInput | python "$PSScriptRoot\10_np_linear_algebra.py")
     if ($sampleOutputValue.Length -eq 1) {
       $result | Should -BeExactly $sampleOutputValue[0]
     } else {

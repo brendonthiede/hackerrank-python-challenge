@@ -1,10 +1,10 @@
-# CHALLENGE_URL_PLACEHOLDER
+# https://www.hackerrank.com/challenges/np-polynomials
 Describe 'Tests' {
   It 'Passes Tests' {
-    $sampleInput = "SAMPLE_INPUT_PLACEHOLDER"
-    $sampleOutputValue = "SAMPLE_OUTPUT_PLACEHOLDER"
+    $sampleInput = "1.1 2 3`n0"
+    $sampleOutputValue = "3.0"
     $sampleOutputValue = $sampleOutputValue.Split("`n")
-    $result = ($sampleInput | python "$PSScriptRoot\SCRIPT_NAME_PLACEHOLDER")
+    $result = ($sampleInput | python "$PSScriptRoot\09_np_polynomials.py")
     if ($sampleOutputValue.Length -eq 1) {
       $result | Should -BeExactly $sampleOutputValue[0]
     } else {
